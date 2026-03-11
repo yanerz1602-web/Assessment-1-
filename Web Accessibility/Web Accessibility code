@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Shutter Craft</title>
 
+<style>
+
+body{
+    background: brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:420px;
+    margin:0 auto;
+}
+
+.top-design{
+    text-align:center;
+    font-size:40px;
+    margin:10px 0;
+}
+
+.cart{
+    text-align:right;
+    font-size:20px;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.caption{
+    background:#efe9c9;
+    color:rgb(145, 36, 36);
+    font-weight:bold;
+    padding:6px;
+}
+
+.basket{
+    font-size:12px;
+    margin:3px 0 10px 0;
+    background-color: white;
+    padding: 5px;
+    display: inline-block;
+}
+
+.footer{
+    margin-top:10px;
+}
+
+.footer ul{
+    margin-top:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top-design"><Img src="pictures/TheDivider.png"></Img></div>
+
+<div class="cart">🛒</div>
+
+<img src=pictures/OceanPhoto.jpg>
+<div class="caption">
+This was from a fabulous trip to the cost of Greenland with my family. 
+The water was lovely but very cold!
+</div>
+<div class="basket">Add to basket</div>
+
+<img src="pictures/BridgePhoto.jpg">
+<div class="caption">
+A picture of the Golden Gate Bridge. New York! New York!
+</div>
+<div class="basket">Add to basket</div>
+
+<img src="pictures/ValleyPhoto.jpg">
+<div class="caption">
+Another great photo from Greenland. It's a river valley where a glacier used to be.
+</div>
+<div class="basket">Add to basket</div>
+
+<img src="pictures/WaterfallPhoto.jpg">
+<div class="caption">
+The waterfall made such a lovely sound. I could have fallen asleep!
+</div>
+<div class="basket">Add to basket</div>
+
+
+<div class="footer">
+<p>Copyright The Wondering Photographer 2018.</p>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">About me</a></li>
+</ul>
+
+</body>
+</html>
