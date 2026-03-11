@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Story</title>
 
     <style>
@@ -20,14 +21,14 @@
 
         h1 {
             text-align: center;
-            color: #2f8f1d;
+            color: brown;
             font-size: 90px;
             font-family: 'copperplate gothic bold', sans-serif;
         }
 
         h2 {
             text-align: center;
-            color: #2f8f1d;
+            color: brown;
             font-size: 40px;
             font-family: 'copperplate gothic bold', sans-serif;
         }
@@ -39,7 +40,7 @@
         }
 
         .highlight {
-            background: #2f8f1d;
+            background: rgb(145, 36, 36);
             color: white;
             padding: 20px;
             border-radius: 20px;
@@ -112,13 +113,16 @@
             our commitment to excellence remains unwavering.
             Together, we redefine the future of technology,
             one workout at a time. Join us on this exciting journey as we explore new frontiers in AI training and
-            unlock the full potential of machine learning through the power of physical fitness. 
+            unlock the full potential of machine learning through the power of physical fitness.
         </p>
 
         <p>
-            At Machine Gym, we’re not just building smarter machines — we’re creating a new paradigm for AI development that
-            combines the best of both worlds: the intellectual rigor of data science and the physical discipline of fitness.
-            Together, we’re shaping a future where AI models are not only intelligent but also agile, adaptable, and ready to
+            At Machine Gym, we’re not just building smarter machines — we’re creating a new paradigm for AI development
+            that
+            combines the best of both worlds: the intellectual rigor of data science and the physical discipline of
+            fitness.
+            Together, we’re shaping a future where AI models are not only intelligent but also agile, adaptable, and
+            ready to
             take on any challenge that comes their way.
 
     </div>
