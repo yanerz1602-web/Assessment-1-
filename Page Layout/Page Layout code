@@ -1,1 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Yan's Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #dcdcdc;
+            font-family: Georgia, serif;
+        }
+
+        /* Header */
+
+        header {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            margin: 0 25px;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Top text + image */
+
+        .top-section {
+            width: 1000px;
+            margin: 30px auto;
+            display: flex;
+            gap: 30px;
+        }
+
+        .text {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .side-image img {
+            width: 420px;
+            border: 6px solid #eee;
+        }
+
+        /* Gallery */
+
+        .gallery {
+            width: 1000px;
+            margin: 0 auto;
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-auto-rows: 250px;
+        }
+
+        /* first item (video) bigger */
+
+        .gallery .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-column: span 2;
+        }
+
+        .gallery .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        /* camera image wide */
+        .gallery .image.camera {
+            width: 100%;
+            /* match other images */
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+
+        }
+
+        /* snowy mountain spans entire row */
+        .gallery .image.snowy-mountain {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-column: span 2;
+
+        }
+
+        .gallery .image.green-mountain {
+            grid-column: span 2;
+        }
+
+        .intro {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .intro::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .intro .text {
+            width: 100%;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .intro .image {
+            width: 320px;
+            float: right;
+            margin: 0 0 20px 30px;
+        }
+
+        .intro .image img {
+            width: 100%;
+            border: 5px solid #eee;
+            display: block;
+        }
+
+        .paragraph {
+            flex: 1;
+            line-height: 1.6;
+        }
+
+        .cow-image img {
+            width: 1000px;
+            border: 5px solid #eee;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Yan's Gallery</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+
+
+    <section class="intro">
+
+        <div class="image">
+            <img src="pictures/COW.jpg" alt="cow">
+        </div>
+
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent mollis adipiscing per id libero libero sodales, sed bibendum ligula semper. Donec a nunc a enim
+                efficitur efficitur. sed bibendum ligula semper. Donec a nunc a enim efficitur efficitur. sed bibendum
+                ligula semper. Donec a nunc a enim efficitur efficitur. sed bibendum ligula semper. Donec a nunc a enim
+                efficitur efficitur.
+                Nam eget ligula a enim efficitur efficitur. sed bibendum ligula semper. Donec a nunc a enim efficitur
+                efficitur. sed bibendum ligula semper. Donec a nunc a enim efficitur efficitur. sed bibendum ligula
+                semper. Donec a nunc a enim efficitur efficitur.
+            </p>
+
+            <p>
+                Lectus ultrices nibh lobortis tempus facilisis sit
+                cubilia taciti sociosqu. sed bibendum ligula semper. Donec a nunc a enim efficitur efficitur. sed
+                bibendum ligula semper. Donec a nunc a enim efficitur efficitur. sed bibendum ligula semper. Donec a
+                nunc a enim efficitur efficitur. sed bibendum ligula semper. Donec a nunc a enim efficitur efficitur.
+                sed bibendum ligula semper.
+                Lectus ultrices nibh lobortis tempus facilisis sit
+                cubilia taciti sociosqu. sed bibendum ligula semper. Donec a nunc a enim efficitur efficitur. sed
+                bibendum ligula semper. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum omnis nesciunt
+                molestias nemo, cumque optio saepe, modi beatae doloremque quas provident dolorem minima fuga dolorum
+                voluptate.
+                
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="gallery">
+
+        <video class="video" controls>
+            <source src="pictures/video.mp4" type="video/mp4">
+        </video>
+
+        <img class="image lights" src="pictures/lights.jpg" alt="lights">
+        <img class="image camera" src="pictures/camera.jpg" alt="camera">
+        <img class="image snowy-mountain" src="pictures/snowy mountain.jpg" alt="snowy mountain">
+        <img class="image green-mountain" src="pictures/green mountain.jpg" alt="green mountain">
+        <img class="image johns-car" src="pictures/johns car jpg.jpg" alt="johns car">
+
+    </section>
+
+</body>
+
+</html>
